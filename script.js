@@ -79,11 +79,11 @@ const randomChoreDoorGenerator = () => {
 
 /* reset starting values */
 const startRound = () => {
-  doorImage1.src = closedDoorPath
-  doorImage2.src = closedDoorPath
-  doorImage3.src = closedDoorPath
-  numClosedDoors = 3
-  currentlyPlaying = true
+  doorImage1.src        = closedDoorPath
+  doorImage2.src        = closedDoorPath
+  doorImage3.src        = closedDoorPath
+  numClosedDoors        = 3
+  currentlyPlaying      = true
   startButton.innerHTML = 'Good luck!'
   randomChoreDoorGenerator()
 }
