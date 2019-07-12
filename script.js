@@ -1,11 +1,9 @@
-/* eslint-disable prettier/prettier */
-
-const doorImage1  = document.getElementById('door1')
-const doorImage2  = document.getElementById('door2')
-const doorImage3  = document.getElementById('door3')
+const doorImage1 = document.getElementById('door1')
+const doorImage2 = document.getElementById('door2')
+const doorImage3 = document.getElementById('door3')
 const startButton = document.getElementById('start')
-const current     = document.getElementById('current-streak')
-const best        = document.getElementById('best-streak')
+const current = document.getElementById('current-streak')
+const best = document.getElementById('best-streak')
 
 /* urls for door pics */
 const botDoorPath =
@@ -79,11 +77,11 @@ const randomChoreDoorGenerator = () => {
 
 /* reset starting values */
 const startRound = () => {
-  doorImage1.src        = closedDoorPath
-  doorImage2.src        = closedDoorPath
-  doorImage3.src        = closedDoorPath
-  numClosedDoors        = 3
-  currentlyPlaying      = true
+  doorImage1.src = closedDoorPath
+  doorImage2.src = closedDoorPath
+  doorImage3.src = closedDoorPath
+  numClosedDoors = 3
+  currentlyPlaying = true
   startButton.innerHTML = 'Good luck!'
   randomChoreDoorGenerator()
 }
